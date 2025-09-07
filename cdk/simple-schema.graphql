@@ -1,0 +1,18 @@
+type Query {
+  hello: String
+  getLoyalty(customer: String): Loyalty
+}
+
+type Mutation {
+  processBooking(input: String): String
+}
+
+type Loyalty {
+  points: Int
+  level: String
+  remainingPoints: Int
+}
+
+type Subscription {
+  onUpdate: String
+}
